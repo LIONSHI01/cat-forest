@@ -1,0 +1,58 @@
+.gallery {
+  column-gap: 4rem;
+  row-gap: 4rem;
+
+  &__breeds-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      height: 65%;
+      width: 65%;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -10;
+
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary-light,
+        $color-primary
+      );
+      border-radius: 34% 66% 48% 52% / 36% 29% 71% 64%;
+
+      transition: all 0.4s 0.1s;
+      opacity: 0;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__photo {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  &__name {
+    font-size: $font-size-small;
+  }
+
+  &__btn {
+    display: inline-block;
+    font-size: $default-font-size;
+    padding: 0.3rem;
+  }
+}

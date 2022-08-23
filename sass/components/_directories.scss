@@ -15,6 +15,7 @@
 
     padding: 2rem 6.5rem;
     border-radius: 10px;
+    // border-radius: 57% 43% 50% 50% / 54% 40% 60% 46%;
     border: 1px solid $color-grey-light-4;
     transition: all 0.4s;
 
@@ -47,8 +48,8 @@
   }
 
   &__icon {
-    height: 8rem;
-    width: 8rem;
+    height: 7rem;
+    width: 7rem;
     margin: 1rem;
     fill: $color-grey-light-4;
   }

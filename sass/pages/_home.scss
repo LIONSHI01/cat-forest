@@ -22,9 +22,16 @@
 }
 
 .section-directory {
-  margin-bottom: 50rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $color-blue;
+}
+
+.section-breeds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem;
+  // margin-bottom: 50rem;
 }
