@@ -69,31 +69,70 @@
 
     <main class="main">
       <section class="section-directory">
-        <div class="directory">
-          <div class="search-box">
-            <form class="search-box__form">
-              <div class="search-box__input-field">
-                <label for="search-for" class="search-box__label"
-                  >Search for</label
-                >
-                <input id="search-for" type="text" class="search-box__input" />
-              </div>
-              <div class="search-box__input-field">
-                <label for="category" class="search-box__label">Category</label>
-                <select id="category" type="text" class="search-box__input">
-                  <option value="british-short-hair">British Short Hair</option>
-                </select>
-              </div>
-              <div class="search-box__input-field">
-                <label for="location" class="search-box__label">Location</label>
-                <input id="location" type="text" class="search-box__input" />
-              </div>
-              <button type="submit" class="search-box__btn">
-                <svg class="search-box__icon">
-                  <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
-                </svg>
-              </button>
-            </form>
+        <div class="search-box">
+          <form class="search-box__form">
+            <div class="search-box__input-field">
+              <label for="search-for" class="search-box__label"
+                >Search for</label
+              >
+              <input
+                id="search-for"
+                type="text"
+                class="search-box__input"
+                placeholder="Cat, tools, food"
+              />
+            </div>
+            <div class="search-box__input-field">
+              <label for="category" class="search-box__label">Category</label>
+              <select id="category" type="text" class="search-box__input">
+                <option value="british-short-hair">British Shorthair</option>
+                <option value="british-short-hair">Polydactyl</option>
+                <option value="british-short-hair">Snowshoe</option>
+                <option value="british-short-hair">Calico</option>
+                <option value="british-short-hair">British Shorthair</option>
+                <option value="british-short-hair">Siamese</option>
+              </select>
+            </div>
+            <div class="search-box__input-field">
+              <label for="location" class="search-box__label">Location</label>
+              <input
+                id="location"
+                type="text"
+                class="search-box__input"
+                placeholder="London, British"
+              />
+            </div>
+            <button type="submit" class="search-box__btn">
+              <svg class="search-box__icon">
+                <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="directories">
+          <div class="directories__link-box">
+            <svg class="directories__icon">
+              <use xlink:href="img/sprite.svg#icon-github"></use>
+            </svg>
+            <span class="directories__title">Buy a cat</span>
+          </div>
+          <div class="directories__link-box">
+            <svg class="directories__icon">
+              <use xlink:href="img/sprite.svg#icon-home"></use>
+            </svg>
+            <span class="directories__title">Cat business</span>
+          </div>
+          <div class="directories__link-box">
+            <svg class="directories__icon">
+              <use xlink:href="img/sprite.svg#icon-heart"></use>
+            </svg>
+            <span class="directories__title">Cat tools</span>
+          </div>
+          <div class="directories__link-box">
+            <svg class="directories__icon">
+              <use xlink:href="img/sprite.svg#icon-cake"></use>
+            </svg>
+            <span class="directories__title">Cat food</span>
           </div>
         </div>
       </section>

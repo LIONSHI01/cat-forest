@@ -95,6 +95,11 @@
     height: 2.5rem;
     width: 2.5rem;
     fill: $color-primary;
+    transition: all 0.2s;
+
+    &:hover {
+      fill: $color-primary-dark;
+    }
   }
 
   &__auth-box {

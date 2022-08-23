@@ -3,7 +3,7 @@
   background-position: top;
   background-size: cover;
   // Test
-  height: 100vh;
+  height: 80vh;
 }
 
 .hero {
@@ -11,7 +11,7 @@
 
   &__heading {
     position: relative;
-    top: 15rem;
+    top: 10rem;
     left: 15rem;
     width: 30%;
   }
@@ -22,5 +22,9 @@
 }
 
 .section-directory {
+  margin-bottom: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: $color-blue;
 }
