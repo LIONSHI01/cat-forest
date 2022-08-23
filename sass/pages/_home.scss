@@ -1,0 +1,26 @@
+.header {
+  background-image: url(../../img/hero.jpg);
+  background-position: top;
+  background-size: cover;
+  // Test
+  height: 100vh;
+}
+
+.hero {
+  position: relative;
+
+  &__heading {
+    position: relative;
+    top: 15rem;
+    left: 15rem;
+    width: 30%;
+  }
+
+  &__highlight-text {
+    color: $color-red;
+  }
+}
+
+.section-directory {
+  background-color: $color-blue;
+}

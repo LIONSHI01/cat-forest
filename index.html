@@ -4,10 +4,99 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Cat Forest</title>
   </head>
   <body>
-    <div class="navigation">Navigation</div>
+    <header class="header">
+      <div class="navigation">
+        <div class="navigation__nav">
+          <div class="navigation__logo-box">
+            <a href="#" class="navigation__logo-link">
+              <img
+                src="img/logo.png"
+                alt="Cat forest logo"
+                class="navigation__logo"
+              />
+            </a>
+          </div>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link"><span>About</span></a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link"><span>Marketplace</span></a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link"><span>Blog</span></a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link"><span>Cat ABC</span></a>
+            </li>
+          </ul>
+          <div class="navigation__search-box">
+            <input type="text" class="navigation__input" placeholder="search" />
+
+            <button class="navigation__search-button">
+              <svg class="navigation__icon">
+                <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="navigation__auth-box">
+            <a href="#" class="navigation__sign-in btn btn--outline">Sign in</a>
+            <a href="#" class="navigation__register btn btn--fill">Register</a>
+          </div>
+        </div>
+      </div>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero__heading">
+            <h1 class="heading-primary">
+              Find Your Lifelong
+              <span class="hero__highlight-text">Friend</span>
+            </h1>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="main">
+      <section class="section-directory">
+        <div class="directory">
+          <div class="search-box">
+            <form class="search-box__form">
+              <div class="search-box__input-field">
+                <label for="search-for" class="search-box__label"
+                  >Search for</label
+                >
+                <input id="search-for" type="text" class="search-box__input" />
+              </div>
+              <div class="search-box__input-field">
+                <label for="category" class="search-box__label">Category</label>
+                <select id="category" type="text" class="search-box__input">
+                  <option value="british-short-hair">British Short Hair</option>
+                </select>
+              </div>
+              <div class="search-box__input-field">
+                <label for="location" class="search-box__label">Location</label>
+                <input id="location" type="text" class="search-box__input" />
+              </div>
+              <button type="submit" class="search-box__btn">
+                <svg class="search-box__icon">
+                  <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
