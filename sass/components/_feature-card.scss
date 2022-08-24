@@ -1,0 +1,131 @@
+.features {
+  display: flex;
+  gap: 5rem;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
+    height: 37rem;
+    border-radius: 1.2rem;
+    box-shadow: $default-box-shadow;
+    overflow: hidden;
+
+    position: relative;
+  }
+
+  &__photo {
+    height: 50%;
+    background-size: cover;
+    background-position: top;
+
+    &--1 {
+      background-image: url(../../img/feature-cats/feature-cat-01.jpg);
+    }
+    &--2 {
+      background-image: url(../../img/feature-cats/feature-cat-02.jpg);
+    }
+    &--3 {
+      background-image: url(../../img/feature-cats/feature-cat-03.jpg);
+    }
+    &--4 {
+      background-image: url(../../img/feature-cats/feature-cat-04.jpg);
+    }
+  }
+
+  &__like-icon {
+    width: 3rem;
+    height: 3rem;
+
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+
+    &--active {
+      fill: $color-red;
+      // background-color: $color-red;
+      // stroke: $color-red;
+      // background-clip: content-box;
+    }
+  }
+
+  &__contents {
+    position: relative;
+    height: 50%;
+    background-color: $color-white;
+    padding: 2rem;
+  }
+
+  &__user-image {
+    display: inline-block;
+    width: 5rem;
+    border-radius: 50%;
+    border: 4px solid $color-white;
+
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    transform: translateY(-50%);
+  }
+
+  &__location {
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__location-box {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__location-text {
+    color: $color-grey-light-5;
+    font-size: 1.4rem;
+  }
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    fill: $color-grey-light-5;
+    margin-right: 0.3rem;
+  }
+
+  &__user-text {
+    font-size: 1.8rem;
+    color: $color-grey-dark-3;
+  }
+
+  &__price {
+    color: $color-grey-light-5;
+    font-size: 2rem;
+  }
+
+  &__btn {
+    font-size: $default-font-size;
+    color: $color-white;
+
+    border-radius: 74% 26% 38% 62% / 64% 49% 51% 36%;
+    border: 2px solid $color-white;
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      $color-white 50%
+    );
+    background-size: 220%;
+
+    &:hover {
+      transform: translateX(3px);
+      color: $color-primary;
+      background-position: 100%;
+    }
+
+    &:active {
+      transform: translateY(3px);
+    }
+  }
+}

@@ -35,3 +35,14 @@
   padding: 10rem;
   // margin-bottom: 50rem;
 }
+
+.section-features {
+  color: $color-white;
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 5rem;
+  margin-bottom: 30rem;
+}

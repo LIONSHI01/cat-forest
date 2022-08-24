@@ -232,7 +232,90 @@ body {
   .gallery__btn {
     display: inline-block;
     font-size: 1.8rem;
-    padding: 0.3rem; }
+    padding: 0.3rem;
+    transition: all 0.2s; }
+
+.features {
+  display: flex;
+  gap: 5rem; }
+  .features__card {
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
+    height: 37rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative; }
+  .features__photo {
+    height: 50%;
+    background-size: cover;
+    background-position: top; }
+    .features__photo--1 {
+      background-image: url(../../img/feature-cats/feature-cat-01.jpg); }
+    .features__photo--2 {
+      background-image: url(../../img/feature-cats/feature-cat-02.jpg); }
+    .features__photo--3 {
+      background-image: url(../../img/feature-cats/feature-cat-03.jpg); }
+    .features__photo--4 {
+      background-image: url(../../img/feature-cats/feature-cat-04.jpg); }
+  .features__like-icon {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem; }
+    .features__like-icon--active {
+      fill: #fc5185; }
+  .features__contents {
+    position: relative;
+    height: 50%;
+    background-color: #fff;
+    padding: 2rem; }
+  .features__user-image {
+    display: inline-block;
+    width: 5rem;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    transform: translateY(-50%); }
+  .features__location {
+    display: flex;
+    flex-direction: column; }
+    .features__location > * {
+      margin-bottom: 1rem; }
+  .features__location-box {
+    display: flex;
+    align-items: flex-end; }
+  .features__location-text {
+    color: #bbb;
+    font-size: 1.4rem; }
+  .features__icon {
+    width: 3rem;
+    height: 3rem;
+    fill: #bbb;
+    margin-right: 0.3rem; }
+  .features__user-text {
+    font-size: 1.8rem;
+    color: #333; }
+  .features__price {
+    color: #bbb;
+    font-size: 2rem; }
+  .features__btn {
+    font-size: 1.8rem;
+    color: #fff;
+    border-radius: 74% 26% 38% 62% / 64% 49% 51% 36%;
+    border: 2px solid #fff;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 220%; }
+    .features__btn:hover {
+      transform: translateX(3px);
+      color: #3fc1c9;
+      background-position: 100%; }
+    .features__btn:active {
+      transform: translateY(3px); }
 
 .header {
   background-image: url(../../img/hero.jpg);
@@ -261,6 +344,15 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 10rem; }
+
+.section-features {
+  color: #fff;
+  background-color: #3fc1c9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+  margin-bottom: 30rem; }
 
 .navigation {
   font-size: 1.8rem; }
