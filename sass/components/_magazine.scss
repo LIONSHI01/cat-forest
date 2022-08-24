@@ -1,0 +1,50 @@
+.magazine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // position: relative;
+  max-width: 120rem;
+
+  margin: 0 auto;
+
+  &__hero {
+    height: 80rem;
+    width: 120rem;
+    position: relative;
+    // background-color: orangered;
+  }
+
+  &__heading {
+    position: absolute;
+    top: 3rem;
+    right: 15rem;
+    font-size: 10rem;
+    font-weight: 100;
+    color: $color-grey-dark-3;
+    letter-spacing: -5px;
+    z-index: 100;
+  }
+
+  &__hero-img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 60%;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+  }
+
+  &__feature {
+    background-color: $color-white;
+    position: absolute;
+
+    width: 50%;
+    top: 22rem;
+    right: -5rem;
+  }
+}

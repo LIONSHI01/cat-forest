@@ -256,13 +256,13 @@ body {
     background-size: cover;
     background-position: top; }
     .features__photo--1 {
-      background-image: url(../../img/feature-cats/feature-cat-01.jpg); }
+      background-image: url(../../img/feature-cats/feature-cat-01.webp); }
     .features__photo--2 {
-      background-image: url(../../img/feature-cats/feature-cat-02.jpg); }
+      background-image: url(../../img/feature-cats/feature-cat-02.webp); }
     .features__photo--3 {
-      background-image: url(../../img/feature-cats/feature-cat-03.jpg); }
+      background-image: url(../../img/feature-cats/feature-cat-03.webp); }
     .features__photo--4 {
-      background-image: url(../../img/feature-cats/feature-cat-04.jpg); }
+      background-image: url(../../img/feature-cats/feature-cat-04.webp); }
   .features__like-icon {
     width: 3rem;
     height: 3rem;
@@ -325,8 +325,10 @@ body {
 .business {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   .business__cards {
+    position: relative;
     display: flex;
     gap: 5rem; }
   .business__card {
@@ -364,6 +366,7 @@ body {
     font-size: 1.8rem; }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -391,6 +394,102 @@ body {
     font-weight: 100; }
   .card__price {
     color: #777; }
+  .card__like-icon {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem; }
+    .card__like-icon--active {
+      fill: #fc5185; }
+
+.magazine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 120rem;
+  margin: 0 auto; }
+  .magazine__hero {
+    height: 80rem;
+    width: 120rem;
+    position: relative; }
+  .magazine__heading {
+    position: absolute;
+    top: 3rem;
+    right: 15rem;
+    font-size: 10rem;
+    font-weight: 100;
+    color: #333;
+    letter-spacing: -5px;
+    z-index: 100; }
+  .magazine__hero-img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 60%; }
+  .magazine__image {
+    display: block;
+    width: 100%; }
+  .magazine__feature {
+    background-color: #fff;
+    position: absolute;
+    width: 50%;
+    top: 22rem;
+    right: -5rem; }
+
+.feature-box {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem; }
+  .feature-box__date {
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 2.5rem; }
+  .feature-box__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333; }
+  .feature-box__paragraph {
+    font-size: 1.8rem; }
+
+.articleCard {
+  height: 30rem;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s; }
+  .articleCard:hover {
+    box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.1);
+    transform: scale(1.05) translateY(-1rem); }
+  .articleCard__image-box {
+    height: 100%;
+    width: 100%; }
+  .articleCard__image {
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s; }
+  .articleCard__contents {
+    width: 90%;
+    background-color: #fff;
+    border-radius: 0.7rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    z-index: 100;
+    padding: 1rem 2rem; }
+  .articleCard__date {
+    font-size: 1.8rem;
+    text-transform: uppercase; }
+  .articleCard__preview-text {
+    color: #333;
+    font-size: 1.6rem; }
 
 .header {
   background-image: url(../../img/hero.jpg);
@@ -446,6 +545,7 @@ body {
       color: #fff; }
   .products__list {
     display: flex;
+    position: relative;
     gap: 5rem; }
   .products__btn {
     font-size: 1.8rem;
@@ -460,6 +560,29 @@ body {
       background-position: 95%; }
     .products__btn:active {
       transform: translateY(3px); }
+  .products__arrow {
+    position: absolute;
+    padding: 1rem;
+    color: #fff;
+    font-size: 4rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s; }
+    .products__arrow:active {
+      transform: translateY(2%); }
+    .products__arrow--right {
+      top: 50%;
+      right: -15rem;
+      transform: translateY(-50%); }
+    .products__arrow--left {
+      top: 50%;
+      left: -15rem;
+      transform: translateY(-50%); }
+
+.section-magazine {
+  padding: 10rem 0;
+  margin-bottom: 30rem; }
 
 .navigation {
   font-size: 1.8rem; }

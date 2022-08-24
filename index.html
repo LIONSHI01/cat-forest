@@ -199,14 +199,18 @@
           <figure class="features__card">
             <div class="features__photo features__photo--1">&nbsp;</div>
             <svg class="features__like-icon">
-              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+              <use xlink:href="img/sprite.svg#icon-heart-outlined"></use>
             </svg>
             <figcaption class="features__contents">
-              <img
-                src="img/users/user-1.jpg"
-                alt="user image"
-                class="features__user-image"
-              />
+              <picture>
+                <source srcset="img/users/user-1.webp" type="image/webp" />
+                <source srcset="img/users/user-1.jpg" type="image/jpg" />
+                <img
+                  src="img/users/user-1.jpg"
+                  alt="user image"
+                  class="features__user-image"
+                />
+              </picture>
               <div class="features__location">
                 <div class="features__location-box">
                   <svg class="features__icon">
@@ -224,7 +228,7 @@
           <figure class="features__card">
             <div class="features__photo features__photo--2">&nbsp;</div>
             <svg class="features__like-icon features__like-icon--active">
-              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+              <use xlink:href="img/sprite.svg#icon-heart-outlined"></use>
             </svg>
             <figcaption class="features__contents">
               <img
@@ -249,14 +253,18 @@
           <figure class="features__card">
             <div class="features__photo features__photo--3">&nbsp;</div>
             <svg class="features__like-icon">
-              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+              <use xlink:href="img/sprite.svg#icon-heart-outlined"></use>
             </svg>
             <figcaption class="features__contents">
-              <img
-                src="img/users/user-3.jpg"
-                alt="user image"
-                class="features__user-image"
-              />
+              <picture>
+                <source srcset="img/users/user-3.webp" type="image/webp" />
+                <source srcset="img/users/user-3.jpg" type="image/jpg" />
+                <img
+                  src="img/users/user-3.jpg"
+                  alt="user image"
+                  class="features__user-image"
+                />
+              </picture>
               <div class="features__location">
                 <div class="features__location-box">
                   <svg class="features__icon">
@@ -274,7 +282,7 @@
           <figure class="features__card">
             <div class="features__photo features__photo--4">&nbsp;</div>
             <svg class="features__like-icon">
-              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+              <use xlink:href="img/sprite.svg#icon-heart-outlined"></use>
             </svg>
             <figcaption class="features__contents">
               <img
@@ -310,7 +318,18 @@
 
           <div class="business__cards u-margin-top-medium u-margin-bottom-big">
             <figure class="business__card">
-              <img src="img/business/business-1.jpg" class="business__image" />
+              <picture>
+                <source
+                  srcset="img/business/business-1.webp"
+                  type="image/webp"
+                />
+                <source srcset="img/business/business-1.jpg" type="image/jpg" />
+
+                <img
+                  src="img/business/business-1.jpg"
+                  class="business__image"
+                />
+              </picture>
               <figcaption class="business__contents">
                 <span class="business__date">March 12, 2022</span>
                 <p class="business__preview-text">
@@ -319,7 +338,19 @@
               </figcaption>
             </figure>
             <figure class="business__card">
-              <img src="img/business/business-2.jpg" class="business__image" />
+              <picture>
+                <source
+                  srcset="img/business/business-2.webp"
+                  type="image/webp"
+                />
+                <source srcset="img/business/business-2.jpg" type="image/jpg" />
+
+                <img
+                  src="img/business/business-2.jpg"
+                  class="business__image"
+                />
+              </picture>
+
               <figcaption class="business__contents">
                 <span class="business__date">March 12, 2022</span>
                 <p class="business__preview-text">
@@ -328,7 +359,19 @@
               </figcaption>
             </figure>
             <figure class="business__card">
-              <img src="img/business/business-3.jpg" class="business__image" />
+              <picture>
+                <source
+                  srcset="img/business/business-3.webp"
+                  type="image/webp"
+                />
+                <source srcset="img/business/business-3.jpg" type="image/jpg" />
+
+                <img
+                  src="img/business/business-3.jpg"
+                  class="business__image"
+                />
+              </picture>
+
               <figcaption class="business__contents">
                 <span class="business__date">March 12, 2022</span>
                 <p class="business__preview-text">
@@ -347,8 +390,13 @@
               Featured <span>Cat Business</span>
             </h2>
           </div>
-          <div class="products__list u-margin-top-small u-margin-bottom-medium">
+          <div
+            class="products__list u-margin-top-medium u-margin-bottom-medium"
+          >
             <figure class="card">
+              <svg class="card__like-icon card__like-icon--active">
+                <use xlink:href="img/sprite.svg#icon-heart-outlined"></use>
+              </svg>
               <picture>
                 <source
                   srcset="img/products/product-1.webp"
@@ -367,6 +415,9 @@
               </figcaption>
             </figure>
             <figure class="card">
+              <svg class="card__like-icon">
+                <use xlink:href="img/sprite.svg#icon-heart-outlined"></use>
+              </svg>
               <picture>
                 <source
                   srcset="img/products/product-2.webp"
@@ -385,6 +436,9 @@
               </figcaption>
             </figure>
             <figure class="card">
+              <svg class="card__like-icon">
+                <use xlink:href="img/sprite.svg#icon-heart-outlined"></use>
+              </svg>
               <picture>
                 <source
                   srcset="img/products/product-3.webp"
@@ -403,6 +457,9 @@
               </figcaption>
             </figure>
             <figure class="card">
+              <svg class="card__like-icon">
+                <use xlink:href="img/sprite.svg#icon-heart-outlined"></use>
+              </svg>
               <picture>
                 <source
                   srcset="img/products/product-4.webp"
@@ -420,8 +477,79 @@
                 <div class="card__price">$29.00</div>
               </figcaption>
             </figure>
+            <button class="products__arrow products__arrow--right">
+              &rarr;
+            </button>
+            <button class="products__arrow products__arrow--left">
+              &larr;
+            </button>
           </div>
           <a href="#" class="products__btn btn">Go to the shop</a>
+        </div>
+      </section>
+
+      <section class="section-magazine">
+        <div class="magazine">
+          <div class="magazine__hero">
+            <h2 class="magazine__heading">Magazine</h2>
+            <div class="magazine__hero-img-box">
+              <picture>
+                <source
+                  srcset="img/magazine/magazine-hero.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="img/magazine/magazine-hero.jpg"
+                  type="image/jpg"
+                />
+                <img
+                  src="img/magazine/magazine-hero.webp"
+                  alt=""
+                  class="magazine__image"
+                />
+              </picture>
+            </div>
+            <div class="magazine__feature">
+              <div class="feature-box">
+                <span class="feature-box__date">March 14, 2022</span>
+                <h3 class="feature-box__title">Lorem ipsum dolor sit</h3>
+                <p class="feature-box__paragraph">
+                  Necessitatibus vitae ut earum, alias harum id, veritatis totam
+                  exercitationem debitis fugiat magnam molestias quas libero
+                  iusto, deleniti maxime ullam inventore. Id.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="magazine__articles">
+            <figure class="articleCard">
+              <div class="articleCard__image-box">
+                <picture>
+                  <source
+                    srcset="img/business/business-2.webp"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="img/business/business-2.jpg"
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="img/business/business-2.jpg"
+                    class="articleCard__image"
+                  />
+                </picture>
+              </div>
+
+              <figcaption class="articleCard__contents">
+                <span class="articleCard__date">April 12, 2022</span>
+                <p class="articleCard__preview-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+          <a href="#" class="magazine__btn btn">View more</a>
         </div>
       </section>
     </main>

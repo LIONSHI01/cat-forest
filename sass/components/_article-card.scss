@@ -1,31 +1,30 @@
-.business {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.articleCard {
+  height: 30rem;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  overflow: hidden;
+  box-shadow: $default-box-shadow;
   position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
 
-  &__cards {
-    position: relative;
-    display: flex;
-    gap: 5rem;
+  &:hover {
+    box-shadow: $default-box-shadow-light;
+    transform: scale(1.05) translateY(-1rem);
   }
 
-  &__card {
-    height: 30rem;
-    border-radius: 0.7rem;
-    box-shadow: $default-box-shadow;
-    position: relative;
-    cursor: pointer;
-    transition: all 0.3s;
+  &__image-box {
+    height: 100%;
+    width: 100%;
 
-    &:hover {
-      box-shadow: $default-box-shadow-light;
-      transform: scale(1.05) translateY(-1rem);
-    }
+    // &::after {
+    //   content: '';
+    //   background-color: $color-white;
+    //   height: 5rem;
+    // }
   }
 
   &__image {
-    border-radius: 0.7rem;
     height: 100%;
     width: 100%;
 
@@ -55,9 +54,5 @@
   &__preview-text {
     color: $color-grey-dark-3;
     font-size: 1.6rem;
-  }
-
-  &__btn {
-    font-size: $default-font-size;
   }
 }

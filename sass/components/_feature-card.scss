@@ -26,16 +26,16 @@
     background-position: top;
 
     &--1 {
-      background-image: url(../../img/feature-cats/feature-cat-01.jpg);
+      background-image: url(../../img/feature-cats/feature-cat-01.webp);
     }
     &--2 {
-      background-image: url(../../img/feature-cats/feature-cat-02.jpg);
+      background-image: url(../../img/feature-cats/feature-cat-02.webp);
     }
     &--3 {
-      background-image: url(../../img/feature-cats/feature-cat-03.jpg);
+      background-image: url(../../img/feature-cats/feature-cat-03.webp);
     }
     &--4 {
-      background-image: url(../../img/feature-cats/feature-cat-04.jpg);
+      background-image: url(../../img/feature-cats/feature-cat-04.webp);
     }
   }
 
@@ -49,7 +49,11 @@
     right: 1.5rem;
 
     &--active {
+      // background-color: red;
       fill: $color-red;
+
+      // -webkit-mask-image: url(../../img/sprite.svg#icon-heart-outlined);
+      // mask-image: url(../../img/sprite.svg#icon-heart-outlined);
     }
   }
 

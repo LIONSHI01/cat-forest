@@ -72,6 +72,8 @@
 
   &__list {
     display: flex;
+
+    position: relative;
     gap: 5rem;
   }
 
@@ -99,4 +101,41 @@
       transform: translateY(3px);
     }
   }
+  &__arrow {
+    position: absolute;
+    padding: 1rem;
+    color: $color-white;
+    font-size: 4rem;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+    transition: all 0.3s;
+    // box-shadow: $default-box-shadow;
+
+    &:hover {
+    }
+
+    &:active {
+      transform: translateY(2%);
+    }
+
+    &--right {
+      top: 50%;
+      right: -15rem;
+      transform: translateY(-50%);
+    }
+
+    &--left {
+      top: 50%;
+      left: -15rem;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.section-magazine {
+  padding: 10rem 0;
+  margin-bottom: 30rem;
 }
