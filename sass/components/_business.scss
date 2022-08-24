@@ -1,0 +1,64 @@
+.business {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+  }
+
+  &__cards {
+    display: flex;
+    gap: 5rem;
+  }
+
+  &__card {
+    height: 30rem;
+    border-radius: 0.7rem;
+    box-shadow: $default-box-shadow;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      box-shadow: $default-box-shadow-light;
+      transform: scale(1.05) translateY(-1rem);
+    }
+  }
+
+  &__image {
+    border-radius: 0.7rem;
+    height: 100%;
+    width: 100%;
+
+    transition: all 0.3s;
+  }
+
+  &__contents {
+    width: 90%;
+    background-color: $color-white;
+    border-radius: 0.7rem;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 10%);
+
+    z-index: 100;
+
+    padding: 1rem 2rem;
+  }
+
+  &__date {
+    font-size: $default-font-size;
+    text-transform: uppercase;
+  }
+
+  &__preview-text {
+    color: $color-grey-dark-3;
+    font-size: 1.6rem;
+  }
+
+  &__btn {
+    font-size: $default-font-size;
+  }
+}

@@ -12,6 +12,12 @@
     overflow: hidden;
 
     position: relative;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.05) translateY(-5px);
+      box-shadow: $default-box-shadow-light;
+    }
   }
 
   &__photo {
@@ -37,15 +43,13 @@
     width: 3rem;
     height: 3rem;
 
+    cursor: pointer;
     position: absolute;
     top: 1rem;
     right: 1.5rem;
 
     &--active {
       fill: $color-red;
-      // background-color: $color-red;
-      // stroke: $color-red;
-      // background-clip: content-box;
     }
   }
 
@@ -116,12 +120,12 @@
       transparent 50%,
       $color-white 50%
     );
-    background-size: 220%;
+    background-size: 230%;
 
     &:hover {
       transform: translateX(3px);
       color: $color-primary;
-      background-position: 100%;
+      background-position: 95%;
     }
 
     &:active {

@@ -23,12 +23,12 @@
       transparent 50%,
       $color-primary 50%
     );
-    background-size: 220%;
+    background-size: 250%;
 
     &:hover {
       transform: translateX(3px);
       color: $color-white;
-      background-position: 100%;
+      background-position: 95%;
     }
 
     &:active {

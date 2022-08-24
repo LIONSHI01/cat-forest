@@ -88,11 +88,11 @@ body {
   border-radius: 74% 26% 38% 62% / 64% 49% 51% 36%;
   border: 2px solid #3fc1c9;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #3fc1c9 50%);
-  background-size: 220%; }
+  background-size: 250%; }
   .btn--outline:hover {
     transform: translateX(3px);
     color: #fff;
-    background-position: 100%; }
+    background-position: 95%; }
   .btn--outline:active {
     transform: translateY(3px); }
 
@@ -246,7 +246,11 @@ body {
     border-radius: 1.2rem;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    transition: all 0.3s; }
+    .features__card:hover {
+      transform: scale(1.05) translateY(-5px);
+      box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.1); }
   .features__photo {
     height: 50%;
     background-size: cover;
@@ -262,6 +266,7 @@ body {
   .features__like-icon {
     width: 3rem;
     height: 3rem;
+    cursor: pointer;
     position: absolute;
     top: 1rem;
     right: 1.5rem; }
@@ -309,13 +314,54 @@ body {
     border-radius: 74% 26% 38% 62% / 64% 49% 51% 36%;
     border: 2px solid #fff;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
-    background-size: 220%; }
+    background-size: 230%; }
     .features__btn:hover {
       transform: translateX(3px);
       color: #3fc1c9;
-      background-position: 100%; }
+      background-position: 95%; }
     .features__btn:active {
       transform: translateY(3px); }
+
+.business {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .business__cards {
+    display: flex;
+    gap: 5rem; }
+  .business__card {
+    height: 30rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s; }
+    .business__card:hover {
+      box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.1);
+      transform: scale(1.05) translateY(-1rem); }
+  .business__image {
+    border-radius: 0.7rem;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s; }
+  .business__contents {
+    width: 90%;
+    background-color: #fff;
+    border-radius: 0.7rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    z-index: 100;
+    padding: 1rem 2rem; }
+  .business__date {
+    font-size: 1.8rem;
+    text-transform: uppercase; }
+  .business__preview-text {
+    color: #333;
+    font-size: 1.6rem; }
+  .business__btn {
+    font-size: 1.8rem; }
 
 .header {
   background-image: url(../../img/hero.jpg);
@@ -351,8 +397,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 5rem;
-  margin-bottom: 30rem; }
+  padding-bottom: 10rem; }
+
+.section-business {
+  color: #999;
+  padding-bottom: 10rem; }
 
 .navigation {
   font-size: 1.8rem; }
