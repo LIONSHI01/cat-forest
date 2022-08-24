@@ -363,6 +363,35 @@ body {
   .business__btn {
     font-size: 1.8rem; }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  width: 22rem;
+  transition: all 0.3s;
+  box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.25); }
+  .card:hover {
+    transform: scale(1.05) translate(-5px); }
+  .card__image {
+    display: block;
+    width: 100%; }
+  .card__contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem 1rem 2rem;
+    font-size: 1.4rem; }
+  .card__title {
+    text-align: center;
+    color: #333;
+    font-weight: 100; }
+  .card__price {
+    color: #777; }
+
 .header {
   background-image: url(../../img/hero.jpg);
   background-position: top;
@@ -389,7 +418,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10rem; }
+  padding: 10rem 0; }
 
 .section-features {
   color: #fff;
@@ -397,11 +426,40 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 10rem; }
+  padding: 10rem 0; }
 
 .section-business {
   color: #999;
-  padding-bottom: 10rem; }
+  padding: 10rem 0; }
+
+.section-products {
+  background-color: #364f6b;
+  padding: 10rem 0; }
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .products__heading {
+    color: #fff; }
+    .products__heading span {
+      color: #fff; }
+  .products__list {
+    display: flex;
+    gap: 5rem; }
+  .products__btn {
+    font-size: 1.8rem;
+    color: #fff;
+    border-radius: 74% 26% 38% 62% / 64% 49% 51% 36%;
+    border: 2px solid #fff;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 230%; }
+    .products__btn:hover {
+      transform: translateX(3px);
+      color: #364f6b;
+      background-position: 95%; }
+    .products__btn:active {
+      transform: translateY(3px); }
 
 .navigation {
   font-size: 1.8rem; }

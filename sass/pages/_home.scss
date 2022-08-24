@@ -32,7 +32,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10rem;
+  padding: 10rem 0;
   // margin-bottom: 50rem;
 }
 
@@ -43,12 +43,60 @@
   flex-direction: column;
   align-items: center;
 
-  padding-bottom: 10rem;
+  padding: 10rem 0;
   // margin-bottom: 30rem;
 }
 
 .section-business {
   color: $color-grey-dark-2;
-  // background-color: orangered;
-  padding-bottom: 10rem;
+  padding: 10rem 0;
+}
+
+.section-products {
+  background-color: $color-blue;
+  padding: 10rem 0;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    color: $color-white;
+
+    span {
+      color: $color-white;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 5rem;
+  }
+
+  &__btn {
+    font-size: $default-font-size;
+    color: $color-white;
+
+    border-radius: 74% 26% 38% 62% / 64% 49% 51% 36%;
+    border: 2px solid $color-white;
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      $color-white 50%
+    );
+    background-size: 230%;
+
+    &:hover {
+      transform: translateX(3px);
+      color: $color-blue;
+      background-position: 95%;
+    }
+
+    &:active {
+      transform: translateY(3px);
+    }
+  }
 }
