@@ -531,21 +531,44 @@
               </div>
             </div>
           </div>
-          <div class="magazine__articles">
+          <div
+            class="magazine__articles u-margin-top-big u-margin-bottom-medium"
+          >
             <figure class="articleCard">
               <div class="articleCard__image-box">
                 <picture>
                   <source
-                    srcset="img/business/business-2.webp"
+                    srcset="img/article/article-1.webp"
                     type="image/webp"
                   />
-                  <source
-                    srcset="img/business/business-2.jpg"
-                    type="image/jpg"
-                  />
+                  <source srcset="img/article/article-1.jpg" type="image/jpg" />
 
                   <img
-                    src="img/business/business-2.jpg"
+                    src="img/article/article-1.jpg"
+                    class="articleCard__image"
+                  />
+                </picture>
+              </div>
+              <div class="articleCard__bottom">&nbsp;</div>
+
+              <figcaption class="articleCard__contents">
+                <span class="articleCard__date">Aug 12, 2022</span>
+                <p class="articleCard__preview-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+              </figcaption>
+            </figure>
+            <figure class="articleCard">
+              <div class="articleCard__image-box">
+                <picture>
+                  <source
+                    srcset="img/article/article-2.webp"
+                    type="image/webp"
+                  />
+                  <source srcset="img/article/article-2.jpg" type="image/jpg" />
+
+                  <img
+                    src="img/article/article-2.jpg"
                     class="articleCard__image"
                   />
                 </picture>
@@ -563,16 +586,13 @@
               <div class="articleCard__image-box">
                 <picture>
                   <source
-                    srcset="img/business/business-2.webp"
+                    srcset="img/article/article-3.webp"
                     type="image/webp"
                   />
-                  <source
-                    srcset="img/business/business-2.jpg"
-                    type="image/jpg"
-                  />
+                  <source srcset="img/article/article-3.jpg" type="image/jpg" />
 
                   <img
-                    src="img/business/business-2.jpg"
+                    src="img/article/article-3.jpg"
                     class="articleCard__image"
                   />
                 </picture>
@@ -580,41 +600,20 @@
               <div class="articleCard__bottom">&nbsp;</div>
 
               <figcaption class="articleCard__contents">
-                <span class="articleCard__date">April 12, 2022</span>
+                <span class="articleCard__date">Jan 21, 2022</span>
                 <p class="articleCard__preview-text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 </p>
               </figcaption>
             </figure>
-            <figure class="articleCard">
-              <div class="articleCard__image-box">
-                <picture>
-                  <source
-                    srcset="img/business/business-2.webp"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="img/business/business-2.jpg"
-                    type="image/jpg"
-                  />
-
-                  <img
-                    src="img/business/business-2.jpg"
-                    class="articleCard__image"
-                  />
-                </picture>
-              </div>
-              <div class="articleCard__bottom">&nbsp;</div>
-
-              <figcaption class="articleCard__contents">
-                <span class="articleCard__date">April 12, 2022</span>
-                <p class="articleCard__preview-text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-              </figcaption>
-            </figure>
+            <button class="magazine__arrow magazine__arrow--right">
+              &rarr;
+            </button>
+            <button class="magazine__arrow magazine__arrow--left">
+              &larr;
+            </button>
           </div>
-          <a href="#" class="magazine__btn btn">View more</a>
+          <a href="#" class="magazine__btn btn btn--fill">View more</a>
         </div>
       </section>
     </main>
