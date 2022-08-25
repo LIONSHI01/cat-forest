@@ -12,8 +12,9 @@
   }
 
   &__list {
+    width: 100%;
     display: flex;
-
+    justify-content: space-between;
     position: relative;
     gap: 5rem;
   }
@@ -44,6 +45,7 @@
   }
 
   &__arrow {
+    display: inline-block;
     position: absolute;
     padding: 1rem;
     color: $color-white;
@@ -55,6 +57,10 @@
     cursor: pointer;
     transition: all 0.3s;
     // box-shadow: $default-box-shadow;
+
+    &:hover {
+      color: $color-primary;
+    }
 
     &:active {
       transform: translateY(2%);

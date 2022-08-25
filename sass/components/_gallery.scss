@@ -1,5 +1,8 @@
 .gallery {
-  column-gap: 4rem;
+  // max-width: 114rem;
+  width: 100%;
+  // justify-content: space-between;
+  column-gap: 5rem;
   row-gap: 4rem;
 
   &__breeds-box {
@@ -41,13 +44,33 @@
     }
   }
 
+  &__breeds-box:hover &__name::before {
+    transform: scaleX(1);
+  }
+
   &__photo {
     height: 15rem;
     width: 15rem;
   }
 
   &__name {
-    font-size: $font-size-small;
+    display: inline-block;
+    position: relative;
+    font-size: $font-size-medium;
+
+    transition: inherit;
+
+    &::before {
+      content: '';
+      background-color: $color-primary;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      transform: scaleX(0);
+      transition: all 0.3s;
+    }
   }
 
   &__btn {

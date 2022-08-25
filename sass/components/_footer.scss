@@ -19,7 +19,7 @@
   }
 
   &__heading {
-    color: $color-grey-dark-2;
+    color: $color-grey-light-6;
     font-weight: 500;
     font-size: $default-font-size;
     margin-bottom: 1rem;
@@ -36,7 +36,26 @@
     display: inline-block;
     transition: all 0.3s;
 
-    &,
+    border-left: 3px solid transparent;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -10px;
+      height: 100%;
+      width: 3px;
+      background-color: $color-primary;
+      transform: scaleY(0);
+      transition: all 0.3s;
+    }
+
+    &:hover::before {
+      transform: scaleY(1);
+    }
+
+    &:link,
     &:visited {
       text-decoration: none;
       color: $color-grey-dark;
@@ -45,8 +64,8 @@
     &:hover,
     &:active {
       color: $color-primary-dark;
+      // font-weight: 500;
       transform: scale(1.05);
-      font-weight: 500;
     }
   }
 
@@ -101,7 +120,44 @@
   &__copyright {
     border-top: 1px solid $color-grey-light-4;
     align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__copyright-text {
     text-align: center;
     padding-top: 2rem;
+  }
+
+  &__author-contacts {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__author-contact {
+    &:link,
+    &:visited {
+      border-radius: 50%;
+      padding: 0.6rem;
+      background-color: $color-grey-light-6;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $color-primary-dark;
+    }
+  }
+
+  &__author-contact-icon {
+    display: block;
+    fill: $color-white;
+    height: 1.5rem;
+    width: 1.5rem;
   }
 }
