@@ -2,14 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // position: relative;
-  max-width: 120rem;
 
   margin: 0 auto;
 
   &__hero {
     height: 80rem;
-    width: 120rem;
+    width: 100%;
     position: relative;
     // background-color: orangered;
   }
@@ -46,5 +44,10 @@
     width: 50%;
     top: 22rem;
     right: -5rem;
+  }
+
+  &__articles {
+    display: flex;
+    gap: 5rem;
   }
 }

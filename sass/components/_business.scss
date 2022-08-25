@@ -5,8 +5,10 @@
   position: relative;
 
   &__cards {
+    width: 100%;
     position: relative;
     display: flex;
+    justify-content: center;
     gap: 5rem;
   }
 

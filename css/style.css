@@ -17,6 +17,10 @@ html {
 body {
   box-sizing: border-box; }
 
+.container {
+  margin: 0 auto;
+  max-width: 120rem; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -161,6 +165,11 @@ body {
     width: 3rem;
     fill: #fff; }
 
+.directory {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .directories {
   display: flex;
   color: #ccc;
@@ -196,6 +205,11 @@ body {
     fill: #ccc; }
   .directories__title {
     text-transform: uppercase; }
+
+.breeds {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .gallery {
   column-gap: 4rem;
@@ -235,13 +249,62 @@ body {
     padding: 0.3rem;
     transition: all 0.2s; }
 
+.business {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; }
+  .business__cards {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 5rem; }
+  .business__card {
+    height: 30rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s; }
+    .business__card:hover {
+      box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.1);
+      transform: scale(1.05) translateY(-1rem); }
+  .business__image {
+    border-radius: 0.7rem;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s; }
+  .business__contents {
+    width: 90%;
+    background-color: #fff;
+    border-radius: 0.7rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    z-index: 100;
+    padding: 1rem 2rem; }
+  .business__date {
+    font-size: 1.8rem;
+    text-transform: uppercase; }
+  .business__preview-text {
+    color: #333;
+    font-size: 1.6rem; }
+  .business__btn {
+    font-size: 1.8rem; }
+
 .features {
   display: flex;
-  gap: 5rem; }
+  flex-direction: column;
+  align-items: center; }
+  .features__cards {
+    display: flex;
+    gap: 5rem; }
   .features__card {
     display: flex;
     flex-direction: column;
-    width: 28rem;
+    width: 25rem;
     height: 37rem;
     border-radius: 1.2rem;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -322,219 +385,6 @@ body {
     .features__btn:active {
       transform: translateY(3px); }
 
-.business {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative; }
-  .business__cards {
-    position: relative;
-    display: flex;
-    gap: 5rem; }
-  .business__card {
-    height: 30rem;
-    border-radius: 0.7rem;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-    position: relative;
-    cursor: pointer;
-    transition: all 0.3s; }
-    .business__card:hover {
-      box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.1);
-      transform: scale(1.05) translateY(-1rem); }
-  .business__image {
-    border-radius: 0.7rem;
-    height: 100%;
-    width: 100%;
-    transition: all 0.3s; }
-  .business__contents {
-    width: 90%;
-    background-color: #fff;
-    border-radius: 0.7rem;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 10%);
-    z-index: 100;
-    padding: 1rem 2rem; }
-  .business__date {
-    font-size: 1.8rem;
-    text-transform: uppercase; }
-  .business__preview-text {
-    color: #333;
-    font-size: 1.6rem; }
-  .business__btn {
-    font-size: 1.8rem; }
-
-.card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 1.2rem;
-  overflow: hidden;
-  width: 22rem;
-  transition: all 0.3s;
-  box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.25); }
-  .card:hover {
-    transform: scale(1.05) translate(-5px); }
-  .card__image {
-    display: block;
-    width: 100%; }
-  .card__contents {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: #fff;
-    padding: 1rem 1rem 2rem;
-    font-size: 1.4rem; }
-  .card__title {
-    text-align: center;
-    color: #333;
-    font-weight: 100; }
-  .card__price {
-    color: #777; }
-  .card__like-icon {
-    width: 3rem;
-    height: 3rem;
-    cursor: pointer;
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem; }
-    .card__like-icon--active {
-      fill: #fc5185; }
-
-.magazine {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 120rem;
-  margin: 0 auto; }
-  .magazine__hero {
-    height: 80rem;
-    width: 120rem;
-    position: relative; }
-  .magazine__heading {
-    position: absolute;
-    top: 3rem;
-    right: 15rem;
-    font-size: 10rem;
-    font-weight: 100;
-    color: #333;
-    letter-spacing: -5px;
-    z-index: 100; }
-  .magazine__hero-img-box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 60%; }
-  .magazine__image {
-    display: block;
-    width: 100%; }
-  .magazine__feature {
-    background-color: #fff;
-    position: absolute;
-    width: 50%;
-    top: 22rem;
-    right: -5rem; }
-
-.feature-box {
-  display: flex;
-  flex-direction: column;
-  padding: 4rem; }
-  .feature-box__date {
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    font-size: 2.5rem; }
-  .feature-box__title {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #333; }
-  .feature-box__paragraph {
-    font-size: 1.8rem; }
-
-.articleCard {
-  height: 30rem;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  overflow: hidden;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  position: relative;
-  cursor: pointer;
-  transition: all 0.3s; }
-  .articleCard:hover {
-    box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.1);
-    transform: scale(1.05) translateY(-1rem); }
-  .articleCard__image-box {
-    height: 100%;
-    width: 100%; }
-  .articleCard__image {
-    height: 100%;
-    width: 100%;
-    transition: all 0.3s; }
-  .articleCard__contents {
-    width: 90%;
-    background-color: #fff;
-    border-radius: 0.7rem;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 10%);
-    z-index: 100;
-    padding: 1rem 2rem; }
-  .articleCard__date {
-    font-size: 1.8rem;
-    text-transform: uppercase; }
-  .articleCard__preview-text {
-    color: #333;
-    font-size: 1.6rem; }
-
-.header {
-  background-image: url(../../img/hero.jpg);
-  background-position: top;
-  background-size: cover;
-  height: 80vh; }
-
-.hero {
-  position: relative; }
-  .hero__heading {
-    position: relative;
-    top: 10rem;
-    left: 15rem;
-    width: 30%; }
-  .hero__highlight-text {
-    color: #fc5185; }
-
-.section-directory {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #364f6b; }
-
-.section-breeds {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10rem 0; }
-
-.section-features {
-  color: #fff;
-  background-color: #3fc1c9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10rem 0; }
-
-.section-business {
-  color: #999;
-  padding: 10rem 0; }
-
-.section-products {
-  background-color: #364f6b;
-  padding: 10rem 0; }
-
 .products {
   display: flex;
   flex-direction: column;
@@ -579,6 +429,179 @@ body {
       top: 50%;
       left: -15rem;
       transform: translateY(-50%); }
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  width: 22rem;
+  transition: all 0.3s;
+  box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.25); }
+  .card:hover {
+    transform: scale(1.05) translate(-5px); }
+  .card__image {
+    display: block;
+    width: 100%; }
+  .card__contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem 1rem 2rem;
+    font-size: 1.4rem; }
+  .card__title {
+    text-align: center;
+    color: #333;
+    font-weight: 100; }
+  .card__price {
+    color: #777; }
+  .card__like-icon {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem; }
+    .card__like-icon--active {
+      fill: #fc5185; }
+
+.magazine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; }
+  .magazine__hero {
+    height: 80rem;
+    width: 100%;
+    position: relative; }
+  .magazine__heading {
+    position: absolute;
+    top: 3rem;
+    right: 15rem;
+    font-size: 10rem;
+    font-weight: 100;
+    color: #333;
+    letter-spacing: -5px;
+    z-index: 100; }
+  .magazine__hero-img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 60%; }
+  .magazine__image {
+    display: block;
+    width: 100%; }
+  .magazine__feature {
+    background-color: #fff;
+    position: absolute;
+    width: 50%;
+    top: 22rem;
+    right: -5rem; }
+  .magazine__articles {
+    display: flex;
+    gap: 5rem; }
+
+.feature-box {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem; }
+  .feature-box__date {
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 2.5rem; }
+  .feature-box__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333; }
+  .feature-box__paragraph {
+    font-size: 1.8rem; }
+
+.articleCard {
+  height: 30rem;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 2px solid #f0eeee;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer; }
+  .articleCard:hover {
+    border-bottom: 2px solid #3fc1c9; }
+  .articleCard:hover .articleCard__contents {
+    background-color: #3fc1c9;
+    color: #fff; }
+  .articleCard:hover .articleCard__contents .articleCard__date {
+    color: #fff; }
+  .articleCard__image-box {
+    height: 95%;
+    width: 100%; }
+  .articleCard__image {
+    height: 100%;
+    width: 100%; }
+  .articleCard__bottom {
+    background-color: #fff; }
+  .articleCard__contents {
+    width: 90%;
+    background-color: #fff;
+    border-radius: 0.7rem;
+    color: #333;
+    transition: all 0.5s;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    z-index: 100;
+    padding: 1rem 2rem; }
+  .articleCard__date {
+    color: #ccc;
+    font-size: 1.8rem;
+    text-transform: uppercase; }
+  .articleCard__preview-text {
+    color: inherit;
+    font-size: 1.6rem; }
+
+.header {
+  background-image: url(../../img/hero.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 80vh; }
+
+.hero {
+  position: relative; }
+  .hero__heading {
+    position: relative;
+    top: 10rem;
+    left: 15rem;
+    width: 30%; }
+  .hero__highlight-text {
+    color: #fc5185; }
+
+.section-directory {
+  background-color: #364f6b; }
+
+.section-breeds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 0; }
+
+.section-features {
+  color: #fff;
+  background-color: #3fc1c9;
+  padding: 10rem 0; }
+
+.section-business {
+  color: #999;
+  padding: 10rem 0; }
+
+.section-products {
+  background-color: #364f6b;
+  padding: 10rem 0; }
 
 .section-magazine {
   padding: 10rem 0;
