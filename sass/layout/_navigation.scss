@@ -74,7 +74,7 @@
     color: $color-primary;
     background-color: transparent;
     border: none;
-    // padding: 0.7rem 2rem;
+
     margin-right: -3.25rem;
     border-radius: 3px;
     transition: width 0.3s;
@@ -122,6 +122,19 @@
   &__auth-box {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: 2.5rem;
   }
+}
+
+.sticky .navigation {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 999;
+  background-color: rgba($color-white, 0.95);
+  box-shadow: $default-box-shadow-light;
+  height: 9.2rem;
 }

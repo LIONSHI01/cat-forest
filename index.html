@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="script.js" defer></script>
     <title>Cat Forest</title>
   </head>
   <body>
@@ -29,16 +30,27 @@
           </div>
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#" class="navigation__link"><span>About</span></a>
+              <a href="#breeds" class="navigation__link"><span>Breeds</span></a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link"><span>Marketplace</span></a>
+              <a href="#features" class="navigation__link"
+                ><span>Featured Cats</span></a
+              >
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link"><span>Magazine</span></a>
+              <a href="#business" class="navigation__link"
+                ><span>Business</span></a
+              >
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link"><span>Cat ABC</span></a>
+              <a href="#products" class="navigation__link"
+                ><span>Products</span></a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#magazine" class="navigation__link"
+                ><span>Magazine</span></a
+              >
             </li>
           </ul>
           <div class="navigation__search-box">
@@ -104,7 +116,7 @@
                   placeholder="London, British"
                 />
               </div>
-              <button type="submit" class="search-box__btn">
+              <button type="button" class="search-box__btn">
                 <svg class="search-box__icon">
                   <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
                 </svg>
@@ -140,7 +152,7 @@
         </div>
       </section>
 
-      <section class="section-breeds">
+      <section class="section-breeds" id="breeds">
         <div class="breeds container">
           <div class="breeds__heading">
             <h2 class="heading--secondary">Popular <span>Breeds</span></h2>
@@ -193,7 +205,7 @@
         </div>
       </section>
 
-      <section class="section-features">
+      <section class="section-features" id="features">
         <div class="features container">
           <div class="features__heading">
             <h2 class="heading--secondary">Featured <span>Cats</span></h2>
@@ -314,7 +326,7 @@
         </div>
       </section>
 
-      <section class="section-business">
+      <section class="section-business" id="business">
         <div class="business container">
           <div class="business__heading">
             <h2 class="heading--secondary">
@@ -389,7 +401,7 @@
           <a href="#" class="business__btn btn btn--outline">View more</a>
         </div>
       </section>
-      <section class="section-products">
+      <section class="section-products" id="products">
         <div class="products container">
           <div class="products__heading">
             <h2 class="heading--secondary">
@@ -500,7 +512,7 @@
         </div>
       </section>
 
-      <section class="section-magazine">
+      <section class="section-magazine" id="magazine">
         <div class="magazine container">
           <div class="magazine__hero">
             <h2 class="magazine__heading">Magazine</h2>
@@ -578,7 +590,7 @@
               <div class="articleCard__bottom">&nbsp;</div>
 
               <figcaption class="articleCard__contents">
-                <span class="articleCard__date">April 12, 2022</span>
+                <span class="articleCard__date">April 08, 2022</span>
                 <p class="articleCard__preview-text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 </p>
@@ -695,7 +707,8 @@
         </div>
         <div class="footer__copyright">
           <p class="footer__copyright-text">
-            &copy;2022. Mr.lion. All right reserved.
+            &copy;2022. Mr.lion. All right reserved. You could reach me via the
+            following medias.
           </p>
           <div class="footer__author-contacts">
             <a href="#" class="footer__author-contact">
