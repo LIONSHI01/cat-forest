@@ -9,7 +9,10 @@
     height: 50rem;
     width: 100%;
     position: relative;
-    // background-color: orangered;
+
+    @include respond(phone) {
+      margin-bottom: 3rem;
+    }
   }
 
   &__heading {
@@ -21,6 +24,11 @@
     color: $color-grey-dark-3;
     letter-spacing: -5px;
     z-index: 100;
+
+    @include respond(phone) {
+      font-size: 5rem;
+      color: $color-blue;
+    }
   }
 
   &__hero-img-box {
@@ -30,6 +38,10 @@
     border-radius: 5px;
     overflow: hidden;
     width: 60%;
+
+    @include respond(phone) {
+      width: 80%;
+    }
   }
 
   &__image {
@@ -44,14 +56,23 @@
     width: 50%;
     top: 22rem;
     right: -5rem;
+
+    @include respond(phone) {
+      width: 80%;
+      top: 25rem;
+      right: 0;
+    }
   }
 
   &__articles {
+    position: relative;
     display: flex;
     width: 100%;
     justify-content: space-between;
 
-    position: relative;
+    @include respond(tab-port) {
+      justify-content: space-around;
+    }
 
     @include respond(phone) {
       flex-direction: column;

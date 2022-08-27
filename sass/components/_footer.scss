@@ -23,6 +23,7 @@
 
     @include respond(tab-port) {
       row-gap: 3rem;
+      justify-items: center;
     }
   }
 

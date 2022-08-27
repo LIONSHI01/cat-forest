@@ -190,11 +190,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .heading--secondary {
       font-weight: 100;
-      font-size: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .heading--secondary {
-      font-weight: 100;
-      font-size: 2rem; } }
+      font-size: 3.5rem; } }
 
 .btn, .btn:link, .btn:visited {
   display: inline-block;
@@ -713,6 +709,9 @@ body {
     height: 50rem;
     width: 100%;
     position: relative; }
+    @media only screen and (max-width: 37.5em) {
+      .magazine__hero {
+        margin-bottom: 3rem; } }
   .magazine__heading {
     position: absolute;
     top: 3rem;
@@ -722,6 +721,10 @@ body {
     color: #333;
     letter-spacing: -5px;
     z-index: 100; }
+    @media only screen and (max-width: 37.5em) {
+      .magazine__heading {
+        font-size: 5rem;
+        color: #364f6b; } }
   .magazine__hero-img-box {
     position: absolute;
     top: 0;
@@ -729,6 +732,9 @@ body {
     border-radius: 5px;
     overflow: hidden;
     width: 60%; }
+    @media only screen and (max-width: 37.5em) {
+      .magazine__hero-img-box {
+        width: 80%; } }
   .magazine__image {
     display: block;
     width: 100%; }
@@ -738,11 +744,19 @@ body {
     width: 50%;
     top: 22rem;
     right: -5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .magazine__feature {
+        width: 80%;
+        top: 25rem;
+        right: 0; } }
   .magazine__articles {
+    position: relative;
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    position: relative; }
+    justify-content: space-between; }
+    @media only screen and (max-width: 56.25em) {
+      .magazine__articles {
+        justify-content: space-around; } }
     @media only screen and (max-width: 37.5em) {
       .magazine__articles {
         flex-direction: column;
@@ -794,6 +808,9 @@ body {
   display: flex;
   flex-direction: column;
   padding: 4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .feature-box {
+      padding: 2rem; } }
   .feature-box__date {
     text-transform: uppercase;
     letter-spacing: -1px;
@@ -807,13 +824,16 @@ body {
 
 .articleCard {
   display: block;
-  height: 35rem;
+  width: 25%;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   border-bottom: 2px solid #f0eeee;
   overflow: hidden;
   position: relative;
   cursor: pointer; }
+  @media only screen and (max-width: 37.5em) {
+    .articleCard {
+      width: 50%; } }
   .articleCard::before {
     content: '';
     width: 100%;
@@ -838,6 +858,7 @@ body {
     height: 95%;
     width: 100%; }
   .articleCard__image {
+    display: block;
     height: 100%;
     width: 100%; }
   .articleCard__bottom {
@@ -923,7 +944,8 @@ body {
     align-self: stretch; }
     @media only screen and (max-width: 56.25em) {
       .footer__cols {
-        row-gap: 3rem; } }
+        row-gap: 3rem;
+        justify-items: center; } }
   .footer__nav-col {
     display: flex;
     flex-direction: column; }
