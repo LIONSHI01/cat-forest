@@ -1062,17 +1062,19 @@ body {
   background-size: cover;
   height: 80vh;
   position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      background-image: url(../../img/hero-mobile.webp); } }
 
 .hero {
   position: relative; }
   .hero__heading {
-    position: relative;
+    position: absolute;
     top: 12.5rem;
     left: 15rem; }
     @media only screen and (max-width: 56.25em) {
       .hero__heading {
-        top: 6rem;
-        left: 10rem; } }
+        top: 1rem; } }
   .hero__highlight-text {
     color: #fc5185; }
 

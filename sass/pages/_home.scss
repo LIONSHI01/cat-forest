@@ -6,20 +6,25 @@
   height: 80vh;
 
   position: relative;
+
+  @include respond(phone) {
+    background-image: url(../../img/hero-mobile.webp);
+  }
 }
 
 .hero {
   position: relative;
 
   &__heading {
-    position: relative;
+    position: absolute;
     top: 12.5rem;
     left: 15rem;
     // width: 35%;
 
     @include respond(tab-port) {
-      top: 6rem;
-      left: 10rem;
+      top: 1rem;
+      // left: 1rem;
+      // transform: translate(-50%, 0);
     }
   }
 
