@@ -19,6 +19,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+
     row-gap: 3rem;
   }
 
@@ -30,7 +31,7 @@
 
     padding: 2rem 5rem;
     border-radius: 10px;
-    // border-radius: 57% 43% 50% 50% / 54% 40% 60% 46%;
+
     border: 1px solid $color-grey-light-4;
     transition: all 0.4s;
 
@@ -45,7 +46,8 @@
     background-size: 300%;
 
     @include respond(phone) {
-      width: 50%;
+      width: 60%;
+      padding: 1rem 2rem;
     }
     &:hover {
       // background-color: $color-primary;
@@ -70,6 +72,12 @@
     width: 7rem;
     margin: 1rem;
     fill: $color-grey-light-4;
+
+    @include respond(phone) {
+      height: 5rem;
+      width: 5rem;
+      margin: 1rem;
+    }
   }
 
   &__title {

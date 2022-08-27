@@ -151,7 +151,7 @@ body {
       grid-template-columns: repeat(4, 1fr); } }
   @media only screen and (max-width: 37.5em) {
     .u-grid-col-5 {
-      grid-template-columns: repeat(3, 1fr); } }
+      grid-template-columns: repeat(2, 1fr); } }
 
 .u-grid-col-4 {
   display: grid;
@@ -236,7 +236,9 @@ body {
     align-items: center; }
     @media only screen and (max-width: 37.5em) {
       .search-box__form {
-        flex-wrap: wrap; } }
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem; } }
   .search-box__input-field:not(:last-of-type) {
     border-right: 1px solid #ccc; }
   .search-box__input-field {
@@ -347,7 +349,8 @@ body {
     background-size: 300%; }
     @media only screen and (max-width: 37.5em) {
       .directories__link-box {
-        width: 50%; } }
+        width: 60%;
+        padding: 1rem 2rem; } }
     .directories__link-box:hover {
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       background-position: 100%;
@@ -363,6 +366,11 @@ body {
     width: 7rem;
     margin: 1rem;
     fill: #ccc; }
+    @media only screen and (max-width: 37.5em) {
+      .directories__icon {
+        height: 5rem;
+        width: 5rem;
+        margin: 1rem; } }
   .directories__title {
     text-transform: uppercase;
     text-align: center; }
@@ -729,11 +737,12 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 5px;
+    border-radius: 3px;
     overflow: hidden;
     width: 60%; }
     @media only screen and (max-width: 37.5em) {
       .magazine__hero-img-box {
+        left: 3rem;
         width: 80%; } }
   .magazine__image {
     display: block;
@@ -747,7 +756,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .magazine__feature {
         width: 80%;
-        top: 25rem;
+        top: 18rem;
         right: 0; } }
   .magazine__articles {
     position: relative;
@@ -941,11 +950,7 @@ body {
         width: 90%;
         padding: 0 4rem; } }
   .footer__cols {
-    align-self: stretch; }
-    @media only screen and (max-width: 56.25em) {
-      .footer__cols {
-        row-gap: 3rem;
-        justify-items: center; } }
+    row-gap: 2rem; }
   .footer__nav-col {
     display: flex;
     flex-direction: column; }

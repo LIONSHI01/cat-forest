@@ -11,7 +11,10 @@
     align-items: center;
 
     @include respond(phone) {
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+
+      gap: 2rem;
     }
   }
 

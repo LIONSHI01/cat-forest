@@ -35,11 +35,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 5px;
+    border-radius: 3px;
     overflow: hidden;
     width: 60%;
 
     @include respond(phone) {
+      left: 3rem;
       width: 80%;
     }
   }
@@ -59,7 +60,7 @@
 
     @include respond(phone) {
       width: 80%;
-      top: 25rem;
+      top: 18rem;
       right: 0;
     }
   }
