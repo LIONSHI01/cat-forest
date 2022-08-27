@@ -21,14 +21,9 @@
   &__cols {
     row-gap: 2rem;
 
-    // @include respond(tab-port) {
-    //   display: flex;
-    //   flex-direction: column;
-    //   align-items: center;
-    //   gap: 2rem;
-    //   width: 80%;
-    //   margin: 0 auto;
-    // }
+    @include respond(phone) {
+      column-gap: 2rem;
+    }
   }
 
   &__nav-col {

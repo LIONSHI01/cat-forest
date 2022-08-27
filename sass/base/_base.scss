@@ -49,6 +49,10 @@ body {
   margin: 0 auto;
   max-width: $container-width;
 
+  @include respond(tab-port) {
+    margin: 0 auto;
+    max-width: 90rem;
+  }
   @include respond(phone) {
     margin: 0 auto;
     max-width: 60rem;

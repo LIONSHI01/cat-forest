@@ -65,6 +65,10 @@ body {
 .container {
   margin: 0 auto;
   max-width: 114rem; }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      margin: 0 auto;
+      max-width: 90rem; } }
   @media only screen and (max-width: 37.5em) {
     .container {
       margin: 0 auto;
@@ -461,7 +465,7 @@ body {
         flex-direction: column;
         align-items: center; } }
   .business__card {
-    height: 30rem;
+    width: 30%;
     border-radius: 0.7rem;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     position: relative;
@@ -509,7 +513,10 @@ body {
     justify-content: space-between; }
     @media only screen and (max-width: 56.25em) {
       .features__cards {
-        justify-content: space-around; } }
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        row-gap: 4rem; } }
     @media only screen and (max-width: 37.5em) {
       .features__cards {
         display: flex;
@@ -618,9 +625,13 @@ body {
     position: relative; }
     @media only screen and (max-width: 56.25em) {
       .products__list {
-        justify-content: space-around; } }
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        row-gap: 4rem; } }
     @media only screen and (max-width: 37.5em) {
       .products__list {
+        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 3rem; } }
@@ -770,7 +781,7 @@ body {
       .magazine__articles {
         flex-direction: column;
         align-items: center;
-        gap: 3rem; } }
+        gap: 5rem; } }
   .magazine__arrow {
     position: absolute;
     padding: 1rem;
@@ -951,6 +962,9 @@ body {
         padding: 0 4rem; } }
   .footer__cols {
     row-gap: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__cols {
+        column-gap: 2rem; } }
   .footer__nav-col {
     display: flex;
     flex-direction: column; }
