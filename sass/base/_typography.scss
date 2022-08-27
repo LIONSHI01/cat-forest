@@ -15,6 +15,11 @@ body {
     letter-spacing: -2px;
     line-height: 1.1;
   }
+
+  @include respond(phone) {
+    font-size: 4.8rem;
+    letter-spacing: -1px;
+  }
 }
 
 .heading--secondary {
@@ -25,5 +30,15 @@ body {
     text-transform: uppercase;
     color: $color-grey-dark-3;
     font-weight: 500;
+  }
+
+  @include respond(tab-port) {
+    font-weight: 100;
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-weight: 100;
+    font-size: 2rem;
   }
 }
