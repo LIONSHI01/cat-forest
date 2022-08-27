@@ -18,9 +18,41 @@
   <body>
     <header class="header">
       <div class="mobileNav">
-        <svg class="mobileNav__open-icon">
-          <use xlink:href="img/sprite.svg#icon-bars"></use>
-        </svg>
+        <input class="mobileNav__checkbox" type="checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="mobileNav__button">
+          <span class="mobileNav__icon">&nbsp;</span>
+        </label>
+
+        <div class="mobileNav__background">&nbsp;</div>
+        <nav class="mobileNav__nav">
+          <ul class="mobileNav__list">
+            <li class="mobileNav__item">
+              <a href="#breeds" class="mobileNav__link"
+                ><span>01</span>Breeds</a
+              >
+            </li>
+            <li class="mobileNav__item">
+              <a href="#features" class="mobileNav__link"
+                ><span>02</span>Featured Cat</a
+              >
+            </li>
+            <li class="mobileNav__item">
+              <a href="#business" class="mobileNav__link"
+                ><span>03</span>Business</a
+              >
+            </li>
+            <li class="mobileNav__item">
+              <a href="#products" class="mobileNav__link"
+                ><span>04</span>Products</a
+              >
+            </li>
+            <li class="mobileNav__item">
+              <a href="#magazine" class="mobileNav__link"
+                ><span>05</span>Magazine</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="navigation">
         <div class="navigation__nav">
@@ -58,7 +90,7 @@
               >
             </li>
           </ul>
-          <div class="navigation__search-box">
+          <!-- <div class="navigation__search-box">
             <input type="text" class="navigation__input" placeholder="search" />
 
             <button class="navigation__search-button">
@@ -66,7 +98,7 @@
                 <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
               </svg>
             </button>
-          </div>
+          </div> -->
           <div class="navigation__auth-box">
             <a href="#" class="navigation__sign-in btn btn--outline">Sign in</a>
             <a href="#" class="navigation__register btn btn--fill">Register</a>

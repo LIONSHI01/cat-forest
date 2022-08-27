@@ -13,12 +13,14 @@
 
   @include respond(tab-land) {
     justify-content: space-around;
+    font-size: 1.6rem;
   }
 
   @include respond(phone) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    font-size: 1.4rem;
 
     row-gap: 3rem;
   }
