@@ -1,6 +1,10 @@
 .navigation {
   font-size: $default-font-size;
 
+  @include respond(tab-land) {
+    visibility: hidden;
+  }
+
   &__nav {
     display: flex;
     align-items: center;
@@ -18,6 +22,10 @@
     align-items: center;
     gap: 3.5rem;
     margin-left: auto;
+
+    @include respond(tab-land) {
+      gap: 2rem;
+    }
   }
 
   &__link {
@@ -137,4 +145,22 @@
   background-color: rgba($color-white, 0.95);
   box-shadow: $default-box-shadow-light;
   height: 9.2rem;
+}
+
+.mobileNav {
+  position: fixed;
+  top: 4rem;
+  right: 4rem;
+  cursor: pointer;
+  visibility: hidden;
+
+  // @include respond(tab-land) {
+  //   visibility: visible;
+  // }
+
+  &__open-icon {
+    height: 4.5rem;
+    width: 4.5rem;
+    fill: $color-primary;
+  }
 }

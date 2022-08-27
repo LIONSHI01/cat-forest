@@ -12,6 +12,10 @@
 
   box-shadow: $default-box-shadow-dark;
 
+  @include respond(phone) {
+    width: 55%;
+  }
+
   &:hover {
     @include hoverEffect;
   }

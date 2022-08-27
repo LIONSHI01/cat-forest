@@ -11,6 +11,17 @@
   font-size: $default-font-size;
   justify-content: space-between;
 
+  @include respond(tab-land) {
+    justify-content: space-around;
+  }
+
+  @include respond(phone) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 3rem;
+  }
+
   &__link-box {
     width: 20%;
     display: flex;
@@ -33,6 +44,9 @@
     );
     background-size: 300%;
 
+    @include respond(phone) {
+      width: 50%;
+    }
     &:hover {
       // background-color: $color-primary;
       box-shadow: $default-box-shadow;
@@ -60,5 +74,6 @@
 
   &__title {
     text-transform: uppercase;
+    text-align: center;
   }
 }

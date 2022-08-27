@@ -5,6 +5,16 @@
   column-gap: 5rem;
   row-gap: 4rem;
 
+  @include respond(tab-port) {
+    column-gap: 4rem;
+    row-gap: 3rem;
+  }
+
+  @include respond(phone) {
+    column-gap: 3rem;
+    row-gap: 2rem;
+  }
+
   &__breeds-box {
     display: flex;
     flex-direction: column;

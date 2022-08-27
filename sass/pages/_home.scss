@@ -4,6 +4,8 @@
   background-size: cover;
   // Test
   height: 80vh;
+
+  position: relative;
 }
 
 .hero {
@@ -14,6 +16,11 @@
     top: 12.5rem;
     left: 15rem;
     width: 35%;
+
+    @include respond(tab-port) {
+      top: 6rem;
+      left: 10rem;
+    }
   }
 
   &__highlight-text {
@@ -30,6 +37,10 @@
   flex-direction: column;
   align-items: center;
   padding: 10rem 0;
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
 }
 
 .section-features {
@@ -37,18 +48,34 @@
   background-color: $color-primary;
 
   padding: 10rem 0;
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
 }
 
 .section-business {
   color: $color-grey-dark-2;
   padding: 10rem 0;
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
 }
 
 .section-products {
   background-color: $color-blue;
   padding: 10rem 0;
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
 }
 
 .section-magazine {
   padding: 10rem 0;
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
 }

@@ -4,53 +4,108 @@
 
 // PADDING
 .u-padding-top-small {
-  padding-top: 1.5rem;
+  padding-top: 1.5rem !important;
+
+  @include respond(tab-port) {
+    padding-top: 1rem !important;
+  }
 }
 .u-padding-top-medium {
-  padding-top: 4rem;
+  padding-top: 4rem !important;
+
+  @include respond(tab-port) {
+    padding-top: 3rem !important;
+  }
 }
 .u-padding-top-top {
-  padding-top: 8rem;
+  padding-top: 8rem !important;
+
+  @include respond(tab-port) {
+    padding-top: 6rem !important;
+  }
 }
 
 // MARGIN
 .u-margin-top-small {
   margin-top: 1.5rem !important;
+
+  @include respond(tab-port) {
+    margin-top: 1rem !important;
+  }
 }
 
 .u-margin-top-medium {
   margin-top: 4rem !important;
+
+  @include respond(tab-port) {
+    margin-top: 2rem !important;
+  }
 }
 
 .u-margin-top-big {
   margin-top: 8rem !important;
+
+  @include respond(tab-port) {
+    margin-top: 6rem !important;
+  }
 }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 1rem !important;
+  }
 }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 3rem !important;
+  }
 }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 6rem !important;
+  }
 }
 
 .u-margin-top-big {
   margin-top: 8rem !important;
+
+  @include respond(tab-port) {
+    margin-top: 6rem !important;
+  }
 }
 .u-margin-top-huge {
   margin-top: 10rem !important;
+
+  @include respond(tab-port) {
+    margin-top: 8rem !important;
+  }
 }
 
 // GRID
 .u-grid-col-5 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+
+  @include respond(tab-port) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @include respond(phone) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .u-grid-col-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
+  @include respond(tab-port) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

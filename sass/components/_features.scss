@@ -7,7 +7,17 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    // gap: 5rem;
+
+    @include respond(tab-port) {
+      justify-content: space-around;
+    }
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
   }
 
   &__card {
@@ -25,6 +35,9 @@
     &:hover {
       transform: scale(1.05) translateY(-5px);
       box-shadow: $default-box-shadow-light;
+    }
+    @include respond(phone) {
+      width: 55%;
     }
   }
 

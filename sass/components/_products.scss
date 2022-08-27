@@ -16,7 +16,15 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    gap: 5rem;
+
+    @include respond(tab-port) {
+      justify-content: space-around;
+    }
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
   }
 
   &__btn {
@@ -70,12 +78,20 @@
       top: 50%;
       right: -15rem;
       transform: translateY(-50%);
+
+      @include respond(tab-port) {
+        visibility: hidden;
+      }
     }
 
     &--left {
       top: 50%;
       left: -15rem;
       transform: translateY(-50%);
+    }
+
+    @include respond(tab-port) {
+      visibility: hidden;
     }
   }
 }
